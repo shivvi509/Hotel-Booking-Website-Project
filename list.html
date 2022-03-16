@@ -3,13 +3,14 @@
 <head>
     <link rel="stylesheet" type="text/css" href="./styles/common.css" />
     <link rel="stylesheet" type="text/css" href="./styles/list.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
    
 </head>
 <body>
     <header>
     
         <!--Header div of checkpoint 2 list.html-->
-        <div> 
+        <div class="header"> 
             <a href="./index.html"></a>
         <img src="./assests/images/logo.png" alt="logo" class="logo"  >
         <a href="./login.html"class="login">Login</a><br>
@@ -19,70 +20,79 @@
 
     </header>
         <!--Content div of checkpoint 2 list.html-->
-       
-        <div> 
+       <div>
+        <div class="hotel-container"> 
+           
             <div  class="list">
             <a href="#h1" style="color: black;text-decoration: none;"><b>List View</b></a>
-            <a href="#m1" style="color: black;text-decoration: none;" class="mapView"><b>Map View</b></a><br>
+            <a href="#m1" style="color: black;text-decoration: none;" class="mapView"><b>Map View</b></a>
             <a href="./detail.html">
             </div>
                  
             <!-- div for 1st hotel details-->
-                <div class="Hotel1" id="h1">
+            <a href="./detail.html">
+           <div class="Hotel1" id="h1">
             <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" class="himage">
-            <h3>Radisson Blu Hotel</h3>
+            <div>
+            <h3 style="margin-left: 5%;">Radisson Blu Hotel</h3>
            
-            <h4>5 star</h4>
-            <h4>New Delhi</h4>
-
+            <h4 style="margin-left: 5%;">5 star</h4>
+            <h4 style="margin-left: 5%;">New Delhi</h4>
+        </div>
             </div>
 
             </a>
+            <a>
              
              <div class="Hotel2">
                  <!-- div for 2nd hotel details-->
 
                  <img src="https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg" class="himage">
-                 <h3>The Lalit New Delhi</h3>
-               
-                 <h4>4.5 star</h4>
-                 <h4>New Delhi</h4>
-                 </div><br>
+
+                 <div>
+                 <h3 style="margin-left: 5%;">The Lalit New Delhi</h3>
                 
-
+                 <h4 style="margin-left: 5%;">4.5 star</h4>
+                 <h4 style="margin-left: 5%;">New Delhi</h4>
+                </div>
+             </div>
+            </a>
+<a>
             <div class="Hotel3">
-                <!-- div for 3rd hotel details-->
-            <img src="https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg " class="himage">
-               <h3>Taj Palace</h3>
                
-               <h4>4.0 star</h4>
-               <h4>New Delhi</h4>
-             
+            <img src="https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg " class="himage">
+              <div>
+            <h3 style="margin-left: 5%;">Taj Palace</h3>
+               
+               <h4 style="margin-left: 5%;">4.0 star</h4>
+               <h4 style="margin-left: 5%;"> New Delhi</h4>
             </div>
+            </div>
+        </div>
+    </a>
 
-
-               <div class="Map" id="m1">
+               
                    <!-- div for map view -->
-                   <img src="https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png"><br>
-                   <a href="./list.html" ></a>
+                   <img src="https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png" id="map"><br>
+                 
 
-               </div><br>
-</div>
+               </div>
+
 
 <footer>
-        <div >
-            <!-- Footer div of checkpoint 2 list.html-->
 
-            <a href="./contact.html"class="contact">Contact Us</a><br>
-            
-           
-            <a href="https://twitter.com"target="_blank"><img src="./assests/images/twitter.png"  class="footer"></a>
-            <a href="https://www.instagram.com"target="_blank"><img src="./assests/images/instagram.png" class="footer" ></a>
-            <a href="https://www.facebook.com"target="_blank"><img src="./assests/images/facebook.png" class="footer"></a>
-            
-            <p class="copy">Ⓒ 2020 ROOM SEARCH PVT.LTD.</p>
+    <div>
         
-        </div>
-    </footer>
+
+         <a href="./contact.html"class="contact">Contact Us</a><br>
+        
+         <a href="https://twitter.com"target="_blank"><img src="./assests/images/twitter.png"  class="footer"></a>
+         <a href="https://www.instagram.com"target="_blank"><img src="./assests/images/instagram.png" class="footer" ></a>
+         <a href="https://www.facebook.com"target="_blank"><img src="./assests/images/facebook.png" class="footer"></a>
+         
+         <p class="copy">Ⓒ 2020 ROOM SEARCH PVT.LTD.</p>
+    </div>
+    
+</footer>
 </body>
 </html>
