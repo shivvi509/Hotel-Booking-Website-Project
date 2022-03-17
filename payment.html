@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+   <!-- additional links are imported here -->
+  <!-- head part -->
     <link rel="stylesheet" type="text/css" href="./styles/common.css" />
     <link rel="stylesheet" type="text/css" href="./styles/payment.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
@@ -8,14 +10,14 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </head>
 <body>
-    <header>
-        <header>
+  <!--main body div -->
+    <header>     <!-- header part -->
             <div>
                 <!--Image logo-->
                 <img src="./assests/images/logo.png" class="logo" alt="logo">
                 <button onclick="document.getElementById('id01').style.display='block'" style="width:auto; float: right; margin-right: 2%; margin-top: 1.5%; background-color: white;color: black;">Login</button>
             </div>
-          
+          <!-- login container-->
             <div id="id01" class="modal">
   
                 <form class="modal-content animate" action="/action_page.php" method="post" style="max-width: 50%;">
@@ -44,14 +46,9 @@
                   </div>
                 </form>
               </div>
-              
-
-            
-        </header>
 
         </header>
-
-         <div class="container">
+ <div class="container">
          
          <div class="image-container">
              <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" class="p1">
@@ -78,11 +75,12 @@
             </div>
 
              <div class="payNow">
-                 <a href="./payment.html" style="color: black;text-decoration: none;" id="pay">Pay Now</a>
+                <button type="button" class="btn btn-success" id="pay">Pay Now</button>
+                
             </div>
         
         </div>
-         </div>
+  </div>
 
         <footer>
         <div>
@@ -91,7 +89,7 @@
             <div >
                 <!--Contact us for contact details-->
                 <!--Contact us redirects us to contact.html-->
-                <button onclick="document.getElementById('id02').style.display='block'" style="margin-right: 5%; background-color: rgb(11, 93, 216); color: white;">Contact Us</button>
+                <button onclick="document.getElementById('id02').style.display='block'" style=" background-color: rgb(11, 93, 216); color: white;">Contact Us</button>
               </div>
             
             
