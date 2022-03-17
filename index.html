@@ -4,18 +4,54 @@
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./styles/common.css" />
     <link rel="stylesheet" type="text/css" href="./styles/index.css" />
-     
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+ 
 </head>
 <body>
 <!-- converting header to semantic element of html5-->
-    <header>
-        <div>
-        
-        <img src="./assests/images/logo.png" alt="logo" class="logo"  >
-        <a href="./login.html" class="login">Login</a><br>
-       
-    </div>
+    
+        <header>
+            <div>
+                <!--Image logo-->
+                <img src="./assests/images/logo.png" class="logo" alt="logo">
+                <button onclick="document.getElementById('id01').style.display='block'" style="width:auto; float: right; margin-right: 2%; margin-top: 1.5%; background-color: white;color: black;">Login</button>
+            </div>
+          
+            <div id="id01" class="modal">
+  
+                <form class="modal-content animate" action="/action_page.php" method="post" style="max-width: 40%; min-height: 40%;">
+                  <div>
+                      <h2 style="font-style: italic;">
+                          Please Login
+                      </h2>
+                  </div>
+              
+                  <div class="cont">
+                    <label for="uname"><b>&nbsp;&nbsp;  Username &nbsp;&nbsp;</b></label>
+                    <input type="text" placeholder="Enter Username" name="uname" required><br>
+              
+                    <label for="psw"><b>&nbsp;&nbsp;  Password &nbsp;&nbsp;</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required><br>
+                      
+                    <button type="submit" class="login-button">Login</button>
+                    <label>
+                      <input type="checkbox" checked="checked" name="remember"> Remember me
+                    </label>
+                  </div>
+              
+                  <div class="cont" style="background-color:#f1f1f1">
+                    
+                    <button type="submit" onclick="document.getElementById('id01').style.display='none'" class=" cancelbtn">Cancel</button>
+                    <span class="psw">Forgot <a href="#">password?</a></span>
+                  </div>
+
+                </form>
+              </div>
+            
     </header>
+    
     <div class="content">
         <form action="" id="searchBar" >
             <label for="city"></label>
@@ -62,16 +98,24 @@
        </div>
         
         
-        <a href="./index.html" class="viewMore">View more>></a><br ><br>
+        <a href="./index.html" class="viewMore">
+            <button type="button" class="btn btn-secondary">View More</button>
+
+        </a><br ><br>
     </div>
-       <!--converting footer to semantic element of html5 -->
+      
 
        <footer>
         <div >
 
             <!--Footer div of checkpoint  index.html-->
-           
-            <a href="./contact.html" class="contact" >Contact Us</a><br>
+            <div >
+                <!--Contact us for contact details-->
+                <!--Contact us redirects us to contact.html-->
+                <button onclick="document.getElementById('id02').style.display='block'" style="margin-right: 5%; background-color: rgb(11, 93, 216); color: white;">Contact Us</button>
+              </div>
+            
+
          <div id="twitter">
             <a href="https://twitter.com"target="_blank"><img src="./assests/images/twitter.png"  class="footer"></a>
         </div>
@@ -83,7 +127,65 @@
         
         </div>
 
+        <div id="id02" class="modal">
+  
+            <form class="modal-content animate" action="/action_page.php" method="post" style="max-width: 50%;">
+                <div class="modal-content">
+                    <button type="button" style="float: right;" class="close">&times;</button>
+                <div>
+                  <h3 style="font-style: italic;">
+                      Get in touch ----
+                  </h3>
+                  <h5>
+                      Thankyou for reaching out!!!!
+                  </h5>
+                  <h5>
+                      Please enter your email and we will get back to you soon .......
+                  </h5>
+              </div>
+          
+              <div class="cont">
+                <label for="email"><b>Email</b></label>
+                <input type="email" placeholder="Enter your email id" name="email" required><br>
+                  
+                <button type="submit" style="float: right;">Submit</button>
+              </div>
+          
+              <div class="cont" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+              </div>
+              
+            </form>
+        </div>
+
 </footer>
 </div>
+<script>
+       // Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+ }
+  </script>
 </body>
 </html>
