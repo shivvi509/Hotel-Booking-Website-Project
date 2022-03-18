@@ -1,0 +1,68 @@
+.himage{
+    width: 250px;
+    height: 200px;
+  
+}
+.himage::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.Hotel1{
+    background-color: lightgray;
+    margin: 2%;
+    width: 40%;
+    height: auto;
+    float: left;
+  
+  padding: 5px;
+  display: flex;
+}
+.Hotel1:hover{
+  background-color: rosybrown;
+}
+.Hotel2{
+    background-color: lightgray;
+    margin: 2%;
+    width: 40%;
+    height: auto;
+    float: left;
+  
+  padding: 5px;
+  display: flex;
+}
+.Hotel2:hover{
+  background-color: rosybrown;
+}
+    
+.Hotel3{
+    background-color: lightgray;
+    margin: 2%;
+    width: 40%;
+    height: auto;
+    float: left;
+  
+  padding: 5px;
+  display: flex;
+}
+.Hotel3:hover{
+  background-color: rosybrown;
+}
+.list{
+  overflow: hidden;
+ 
+   margin-top: 1%;
+   margin-left: 40%;
+   font-family: 'Ubuntu', sans-serif;
+}
+.mapView{
+    padding: 4%;
+    
+}
+.checked {
+  color: orange;
+}
+.body{
+  background-color: #e0e0e0;
+}

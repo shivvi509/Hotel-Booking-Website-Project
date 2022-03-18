@@ -1,0 +1,52 @@
+.p1{
+    height: 250px; 
+    width: 300px; 
+}
+
+.image-container{
+    display: flex;
+    background-color: rgb(132,136,139);
+    width: 60%;
+    height: 40%;
+    margin-top: 5%;
+    margin-left: 25%;
+    margin-bottom: 2%;
+   
+    
+   
+}
+.info-container {
+    background-color: rosybrown;
+    display: flex;
+    border: 1px solid black ;
+     
+  margin-bottom: 10%;
+    border-radius: 5px;
+   
+  }
+  .info{
+      margin-top: auto;
+      font-family: 'Ubuntu'sans-serif; 
+      margin-bottom: auto;
+      margin-left: auto;
+      margin-right: auto;
+  }
+  .content{
+      color: black;
+      font-family: 'Ubuntu'sans-serif;
+  }
+ .payNow{
+     margin-left: auto;
+     margin-right: auto;
+     margin-top: auto;
+     margin-bottom: auto;
+ }
+ .boxed{
+     margin-top: auto;
+     margin-bottom: auto;
+     margin-left: auto;
+     margin-right: auto;
+ }
+ .container{
+     background-color: #e0e0e0;
+ }
