@@ -5,8 +5,8 @@ html,body {
      margin: 0px;
      padding: 0px;
      border: 0px;
-    
-}
+     font-family: Ubuntu;
+    }
 .logo{
     height: 60px;
     width: 60px;
@@ -14,13 +14,11 @@ html,body {
     margin-left: 1% ;
 }
 .footer{
-
     height: 20px;
     width: 22px;
     float: right;
     margin-right: 5px;
-    position: sticky;
-   
+    position: sticky;   
 }
 header{
    /* display: flexbox;*/
@@ -29,12 +27,11 @@ header{
 	top:0px;
 	left:0px;
 	width:100%;
-     
 }
 footer{
   /*  display: flexbox;*/
-    background-color: rosybrown;
-    position:  sticky;
+  background-color: rosybrown;
+  position:  sticky;
 	bottom:0px;
 	left:0px;
 	width:100%;
