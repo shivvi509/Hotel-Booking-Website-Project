@@ -3,12 +3,15 @@
 <head>
    <!-- additional links are imported here -->
   <!-- head part -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./styles/common.css" />
     <link rel="stylesheet" type="text/css" href="./styles/index.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="./scripts/common.js"></script>
+    <script src="./scripts/index.js"></script>
  
 </head>
 
@@ -26,7 +29,7 @@
           
             <div id="id01" class="modal">   <!-- login container-->
   
-                <form class="modal-content animate" action="/action_page.php" method="post" style="max-width: 40%; min-height: 40%;">
+                <form class="modal-content animate"   style="max-width: 40%; min-height: 40%;">
                   <div>
                       <h2 >
                           Please Login
@@ -72,73 +75,97 @@
         
             <!-- Content Div of Checkpoint index.html-->
 
-       <div class="image-container">  
+            <span>
 
-           <div class="gallery">
-               <a class="gallery-item" href="./list.html">
-                 <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg">
-                 <span class="text-wrapper">
-                     <span class="name">Delhi</span>
-                 </span>
-               </a>
-
-               <a class="gallery-item" href="#">
-                <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg" >
-                <span class="text-wrapper">
-                    <span class="name">Goa</span>
-                </span>
-              </a>
-              
-              <a class="gallery-item" href="#">
-                <img src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg">
-                <span class="text-wrapper">
-                    <span class="name">Hyderabad</span>
-                </span>
-              </a>
-
-
-              <a class="gallery-item" href="#">
-                <img src= "https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg">
-                <span class="text-wrapper">
-                    <span class="name">Kolkata</span>
-                </span>
-              </a>
-
-              <a class="gallery-item" href="#">
-                <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/4d/46/b8/chennai-madras.jpg">
-                <span class="text-wrapper">
-                  <span class="name">Chennai</span>
-              </span>
-              </a>
-
-              <a class="gallery-item" href="#">
-                <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/fc/agra.jpg">
-                <span class="text-wrapper">
-                  <span class="name">Agra</span>
-              </span>
-              </a>
-              
-              <a class="gallery-item" href="#">
-                <img src="https://media-cdn.tripadvisor.com/media/photo-s/10/a3/3b/8a/screenshot-2017-09-12.jpg">
-                <span class="text-wrapper">
-                  <span class="name">Jaipur</span>
-              </span>
-              </a>
-
-              <a class="gallery-item" href="#">
-                <img src="https://media-cdn.tripadvisor.com/media/photo-s/0c/d2/2f/7a/palace-from-the-outside.jpg">
-                <span class="text-wrapper">
-                  <span class="name">Bengaluru</span>
-              </span>
-              </a>
-           </div>
-       </div>
+              <div class="image-container">
+  
+                  <div class="gallery">
+                      <a class="gallery-item" href="#" style="text-decoration: none;">
+                          <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg">
+                          <span class="text-wrapper">
+                              <span class="name">Delhi</span>
+                          </span>
+                      </a>
+  
+                      <a class="gallery-item" href="#" style="text-decoration: none;">
+                          <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg">
+                          <span class="text-wrapper">
+                              <span class="name">GOA</span>
+                          </span>
+                      </a>
+  
+                      <a class="gallery-item" href="#" style="text-decoration: none;">
+                          <img src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg">
+                          <span class="text-wrapper">
+                              <span class="name">Hyderabad</span>
+                          </span>
+                      </a>
+  
+                      <a class="gallery-item" href="#" style="text-decoration: none;">
+                          <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg">
+                          <span class="text-wrapper">
+                              <span class="name">Kolkata</span>
+                          </span>
+                      </a>
+  
+                  </div>
+  
+              </div>
+  
+  
+  
+              <span id="dots">  
+  
+  
+             </span>
+  
+  
+              <span id="more">
+  
+  
+                  <div class="image-container">
+  
+                  <div class="gallery">
+                      <a class="gallery-item" href="#"  style="text-decoration: none;">
+                          <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/4d/46/b8/chennai-madras.jpg">
+                          <span class="text-wrapper">
+                              <span class="name">Chennai</span>
+                          </span>
+                      </a>
+  
+                      <a class="gallery-item" href="#"  style="text-decoration: none;">
+                          <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/fc/agra.jpg">
+                          <span class="text-wrapper">
+                              <span class="name">Agra</span>
+                          </span>
+                      </a>
+  
+                      <a class="gallery-item" href="#"  style="text-decoration: none;">
+                          <img src="https://media-cdn.tripadvisor.com/media/photo-s/10/a3/3b/8a/screenshot-2017-09-12.jpg">
+                          <span class="text-wrapper">
+                              <span class="name">Jaipur</span>
+                          </span>
+                      </a>
+  
+                      <a class="gallery-item" href="#" style="text-decoration: none;">
+                          <img src="https://media-cdn.tripadvisor.com/media/photo-s/0c/d2/2f/7a/palace-from-the-outside.jpg">
+                          <span class="text-wrapper">
+                              <span class="name">Bengaluru</span>
+                          </span>
+                      </a>
+  
+                  </div>
+  
+              </div>
+  
+  
+          </span>
+  
+      </span>
         
-        
-        <a href="./index.html" class="viewMore">
-            <button type="button" class="btn btn-secondary">View More</button>
-
-        </a><br ><br>
+      <div style="text-align: center; margin-bottom: 15px;">
+        <button onclick="myFunction()" id="myBtn" type="button" class="btn btn-secondary">View more</button>
+    </div>
     </div>
       
 
