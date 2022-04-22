@@ -149,7 +149,8 @@
             ullam doloremque!</p>
         </div>
     </div> 
-</div>        
+</div>       
+<div id="image"></div> 
     <footer>
          <!--Footer div for checkpoint 2 details.html-->
          <div >
@@ -199,5 +200,19 @@
     </div>
 
 </footer>
+
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=c60345e170msh3ba019454a286afp1db6e3jsn281038817a0a&callback=initMap
+"></script>
+ <script>
+ var image;
+ function initMap() {
+ image = new google.maps.Map(document.getElementById("image"), {
+ center: { lat: -34.397, lng: 150.644 },
+ zoom: 8
+ });
+ }
+ </script>
+ 
 </body>
 </html>
