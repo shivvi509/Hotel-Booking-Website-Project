@@ -89,6 +89,7 @@
         </div>
   </div>
   <div id="image"></div>
+  <div id="map"></div>
         
   <footer>
         <div>
@@ -154,5 +155,19 @@ src="https://maps.googleapis.com/maps/api/js?key=c60345e170msh3ba019454a286afp1d
  }
  </script>
 
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8rIkFDwJRiVKpbuNmChjHx_4E4sdN1_A&callback=initMap
+"></script>
+ <script>
+ var map;
+ function initMap() {
+ map = new google.maps.Map(document.getElementById("map"), {
+ center: { lat: -34.397, lng: 150.644 },
+ zoom: 8
+ });
+ }
+ </script>
+
 </body>
 </html>
+<!--    -->
